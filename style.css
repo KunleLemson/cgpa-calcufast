@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  padding: 15px;
+}
+
+.logo {
+  font-size: 25px;
+  font-family: cursive;
+  text-align: center;
+  margin: 0;
+}
+
+.motto {
+  text-align: center;
+  font-size: 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+.table {
+    overflow-x: auto;
+}
+
+.table {
+    border-collapse: collapse;
+    padding: 15px;
+    margin: 25px auto;
+    min-width: 100%;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table th {
+    background-color: #103a89;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table tr {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+.table tr:hover,
+tr td button:hover {
+    color: #103a89;
+}
+.table tr td {
+    padding: 15px;
+    position: relative;
+}
+
+.table tr:last-child {
+    border-bottom: 2px solid #103a89;
+}
+
+.table tbody {
+    counter-reset: name-count;
+}
+
+.form {
+  margin: 25px auto;
+  width: 100%;
+}
+
+.table tr td#count::before {
+    counter-increment: name-count;
+    content: counter(name-count) ". ";
+    position: absolute;
+    left: 15px;
+    box-sizing: border-box;
+    top: 15px;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  background-color: transparent;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+}
+
+.input:focus, select:focus {
+  outline: 1px solid gray;
+}
+
+.button:focus, .button:hover {
+  outline: none;
+  background-color: #062662;
+}
+
+.button {
+  width: 46%;
+  padding: 15px;
+  border: none;
+  background-color: #103a89;
+  margin: 10px auto;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 1.5s;
+}
+
+.left {
+  float: left;
+  clear: right;
+}
+
+.right {
+  float: right;
+}
+
+.wrapper {
+  padding: 20px;
+  margin: 15px auto;
+  border: 1px solid cornflowerblue;
+  display: none;
+}
+
+label {
+  margin: 15px auto 5px;
+}
+#more {
+  color: #103a89;
+  cursor: pointer;
+  text-decoration: underline;
+  outline: none;
+}
+
+.continue {
+  width: 100%;
+}
+#error   {
+  visibility: hidden;
+  color: red;
+}
+.mistaken {
+    clear: left;
+}
+
+label {
+  display: block;
+}
+.overlay {
+    overflow-x: auto;
+}
+footer {
+    margin: 0;
+    text-align: center;
+    padding: 15px;
+}
+
+
+@media (min-width: 480px) {
+  body {
+    padding: 0 80px;
+  }
+    .logo {
+        font-size: 65px;
+    }
+    .motto {
+      font-size: 20px;
+    }
+    .table {
+        margin: 25px auto;
+        min-width: 60%;
+    }
+    .form {
+      width: 60%;
+      margin: 25px auto;
+    }
+    .wrapper {
+      width: 60%;
+      margin: 25px auto;
+    }
+    header {
+      width: 60%;
+      margin: 25px auto;
+    }
+
+}
