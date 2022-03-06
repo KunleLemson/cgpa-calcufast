@@ -47,7 +47,14 @@
       <label for="ccode">Course Code</label>
       <input type="text" name="ccode" id="ccode" class="input" autocomplete="off" autocorrect="off" />
       <label for="cscore">Score</label>
-      <input type="text" name="cscore" I'd="cscore" class="input" aotucomplete="off" autocorrect="off" />
+      <input type="text" name="cscore" id="cscore" class="input" aotucomplete="off" autocorrect="off" />
+      <label for="cunit">Unit</label>
+      <select id="cunit">
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+      </select>
       <input type="button" value="Add Course" id="add-course" class="button left" />
       <input type="button" value="Calculate" class="button right" id="calculate" />
       <p class="mistaken"><b>Error/Done? <a href="#" onclick="clearTable()">Clear All</a></b></p>
